@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    
+    grid-template-areas: 
+        "sidebar-left sidebar-left sidebar-right sidebar-right";
+
+}
+
+.sidebar-left, .sidebar-right {
+    border: 1px solid red;
+}
+
+.sidebar-left {
+    background-image: url("/images/background.jpg");
+    background-color: #cccccc;
+    width:  100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    grid-area: sidebar-left;
+}
+
+.sidebar-right {
+    grid-area: sidebar-right;
+}
+
