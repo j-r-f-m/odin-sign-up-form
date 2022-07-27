@@ -19,7 +19,7 @@ body {
 }
 
 .sidebar-left {
-    background-image: url("/images/background.jpg");
+    background-image: url("images/background.jpg");
     background-color: #cccccc;
     width:  100%;
     background-position: center;
