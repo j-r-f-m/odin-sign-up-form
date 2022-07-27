@@ -1,18 +1,21 @@
+:root {
+    /* control left margin of all content in sidebar-right */
+    --margin-left: 2rem;
+}
+
 body {
     margin: 0;
 }
 
+
 .container-grid {
     display: grid;
-    grid-template-columns: 50px 50px 50px 50px;
-    
-    grid-template-areas: 
-        "sidebar-left sidebar-left sidebar-right sidebar-right";
-
-}
+    grid-template-columns: minmax(250px, 35%) 1fr;
+  }
 
 .sidebar-left, .sidebar-right {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    height: 100vh;
 }
 
 .sidebar-left {
@@ -23,12 +26,73 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-
-
-    grid-area: sidebar-left;
 }
 
-.sidebar-right {
-    grid-area: sidebar-right;
+
+
+/* .header-left-container {
+    margin: 33% 0 0 0;
+    background-color: black;
+    padding: 4em;
+
+} */
+
+.header-left {
+    margin: 33% 0 0 0;
+    text-align: center;
+    color: white;
+
+    /* background: rgba(204, 204, 204, 0.5); */
+}
+
+.sidebar-right-container {
+    display: grid;
+    grid-template-rows: 1fr 0.85fr 1fr;
+    flex-wrap: wrap;
+}
+
+.txt, .button-container {
+    background-color: grey;
+}
+
+.txt-top  {
+    margin: 7rem 5rem 1rem var(--margin-left);
+}
+
+.txt-bottom {
+    margin: 1rem 5rem 1.5rem var(--margin-left);
+}
+
+.form-container {
+    display: flex;
+    
+}
+
+.form-left, .form-right {
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    margin-top: 1rem;
+}
+
+.form-left, h1, .txt-button {
+    margin-left: var(--margin-left);
+}
+
+.form-right {
+    margin-left: 4rem;
+}
+
+label, input {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    margin-top: 2rem;
+    margin-left: var(--margin-left);
+    padding: 1em;
+
 }
 
