@@ -38,11 +38,17 @@ body {
 } */
 
 .header-left {
-    margin: 33% 0 0 0;
-    text-align: center;
-    color: white;
+    margin: 14.70rem 0 0 0;
+    display: grid;
+    place-items: center;
 
-    /* background: rgba(204, 204, 204, 0.5); */
+
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+
+    height: 6rem;
+
+    font-family: 'Press Start 2P', cursive;
 }
 
 .sidebar-right-container {
@@ -57,10 +63,16 @@ body {
 
 .txt-top  {
     margin: 7rem 5rem 1rem var(--margin-left);
+
 }
 
 .txt-bottom {
     margin: 1rem 5rem 1.5rem var(--margin-left);
+
+}
+
+p, label, button, h1 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-container {
@@ -71,6 +83,10 @@ body {
 .form-left, .form-right {
     display: flex;
     flex-direction: column;
+}
+
+.sign-up {
+    box-shadow: 5px 10px 8px -5px #000000;
 }
 
 h1{
@@ -89,10 +105,20 @@ label, input {
     margin-bottom: 0.5rem;
 }
 
+.txt, .button-container {
+    background-color: #F5F5F5;
+}
+
 button {
     margin-top: 2rem;
     margin-left: var(--margin-left);
     padding: 1em;
-
+    background-color: rgb(4, 27, 4);
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
