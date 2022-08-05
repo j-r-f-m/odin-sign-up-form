@@ -28,22 +28,27 @@ body {
     position: relative;
 }
 
-
-
-/* .header-left-container {
-    margin: 33% 0 0 0;
-    background-color: black;
-    padding: 4em;
-
-} */
-
-.header-left {
+.header-container-container{
     margin: 14.70rem 0 0 0;
+}
+
+.header-left-container {
+    display: flex;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    justify-content: center;
+}
+
+
+
+.header-left, .logo {
+    
+   
     display: grid;
     place-items: center;
 
 
-    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+    
     color: #f1f1f1;
 
     height: 6rem;
@@ -86,10 +91,11 @@ p, label, button, h1 {
 }
 
 .sign-up {
-    box-shadow: 5px 10px 8px -5px #000000;
+    /* !!!!!! shadow does not works */
+    box-shadow: 10px 10px red;
 }
 
-h1{
+h1, .logo{
     margin-top: 1rem;
 }
 
@@ -105,6 +111,21 @@ label, input {
     margin-bottom: 0.5rem;
 }
 
+input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+input[type=text]:focus {
+    outline-color: blue;
+    /* !!!!!!!!!!!!!!!!! box shadow richtig hinbekommen
+     */
+    /* box-shadow: 1px 1px 1px 2px rgba(0,0,0,.8); */
+}
+
 .txt, .button-container {
     background-color: #F5F5F5;
 }
@@ -114,11 +135,25 @@ button {
     margin-left: var(--margin-left);
     padding: 1em;
     background-color: rgb(4, 27, 4);
-    border: none;
+    
     color: white;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
+    transition-duration: 0.4s;
 }
 
+button:hover {
+    background-color: #F5F5F5;
+    color: black;
+    border-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
