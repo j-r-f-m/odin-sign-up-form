@@ -15,6 +15,7 @@
 </head>
 <body>
     <div class="container container-grid">
+        <!-- left -->
         <div class="sidebar-left">
             <div class="header-container-container">
                 <div class="header-left-container">
@@ -22,9 +23,9 @@
                     <h1 class="header-left">Odin</h1>
                 </div>
             </div>
-            
         </div>
 
+        <!-- right -->
         <div class="sidebar-right sidebar-right-container">
             <div class="txt">            
                 <p class="txt-top">
@@ -40,35 +41,44 @@
             
             <div class="sign-up">
                 <h1>Let's do this!</h1>
+
+                <!-- form -->
                 <form class="form-container" action="submit">
-                    <div class="form-left">
-                        <label for="first-name">FIRST NAME</label>
-                        <input id="first-name" type="text">
-                        <label for="e-mail">EMAIL</label>
-                        <input for="e-mail" type="text">
-                        <label for="password">PASSWORD</label>
-                        <input for="password" type="text">
 
+                    <div class="input-container">
+                        <div class="form-left">
+                            <label for="first-name">FIRST NAME</label>
+                            <input id="first-name" type="text" required/>
+                            <label for="e-mail">EMAIL</label>
+                            <input for="e-mail" type="text" required/>
+                            <label for="password">PASSWORD</label>
+                            <input for="password" type="text" required/>
+    
+                        </div>
+    
+                        <div class="form-right">
+                            <label for="last-name">LAST NAME</label>
+                            <input id="last-name" type="text"/>
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input id="phone-number" type="text"/>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input id="confirm-password"type="text"/>
+                        </div>
                     </div>
 
-                    <div class="form-right">
-                        <label for="last-name">LAST NAME</label>
-                        <input id="last-name" type="text">
-                        <label for="phone-number">PHONE NUMBER</label>
-                        <input id="phone-number" type="text">
-                        <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password"type="text">
-                    </div>
 
+
+                    <div class="button-container">
+                        <button type="submit" class="submit-button">
+                            CREATE ACCOUNT
+                        </button>
+                        <p class="txt-button">Already have an account? <a href="">Log in</a></p>
+                    </div>
                 </form>
+
             </div>
 
-            <div class="button-container">
-                <button type="submit" class="submit-button">
-                    CREATE ACCOUNT
-                </button>
-                <p class="txt-button">Already have an account? <a href="">Log in</a></p>
-            </div>
+
         </div>
     </div>
 

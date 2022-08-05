@@ -3,14 +3,15 @@
     --margin-left: 2rem;
 }
 
+
 body {
     margin: 0;
 }
 
-
+/* fundamental layout */
 .container-grid {
     display: grid;
-    grid-template-columns: minmax(250px, 35%) 1fr;
+    grid-template-columns: minmax(250px, 40%) 1fr;
   }
 
 .sidebar-left, .sidebar-right {
@@ -42,8 +43,6 @@ body {
 
 
 .header-left, .logo {
-    
-   
     display: grid;
     place-items: center;
 
@@ -56,10 +55,12 @@ body {
     font-family: 'Press Start 2P', cursive;
 }
 
+/* grid right part */
 .sidebar-right-container {
     display: grid;
     grid-template-rows: 1fr 0.85fr 1fr;
     flex-wrap: wrap;
+    
 }
 
 .txt, .button-container {
@@ -80,7 +81,7 @@ p, label, button, h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.form-container {
+.input-container {
     display: flex;
     
 }
@@ -90,10 +91,7 @@ p, label, button, h1 {
     flex-direction: column;
 }
 
-.sign-up {
-    /* !!!!!! shadow does not works */
-    box-shadow: 10px 10px red;
-}
+
 
 h1, .logo{
     margin-top: 1rem;
@@ -130,6 +128,14 @@ input[type=text]:focus {
     background-color: #F5F5F5;
 }
 
+.txt {
+    grid-row: 1 / 2;
+}
+
+.button-container {
+    grid-row: 3 / 4;
+}
+
 button {
     margin-top: 2rem;
     margin-left: var(--margin-left);
@@ -144,8 +150,8 @@ button {
     transition-duration: 0.4s;
 }
 
-button:hover {
-    background-color: #F5F5F5;
+button:hover, button:focus {
+    background-color: rgb(118, 118, 118);
     color: black;
     border-color: black;
 }
@@ -156,4 +162,12 @@ a {
 
 a:visited {
     color: black;
+}
+
+a:hover, a:focus{
+    color: gray;
+}
+
+.input-container {
+    box-shadow: 10px 10px red;
 }
