@@ -14,7 +14,7 @@ body {
     grid-template-columns: minmax(250px, 40%) 1fr;
   }
 
-.sidebar-left, .sidebar-right {
+.sidebar-left, .form-container {
     /* border: 1px solid red; */
     height: 100vh;
 }
@@ -45,22 +45,16 @@ body {
 .header-left, .logo {
     display: grid;
     place-items: center;
-
-
-    
     color: #f1f1f1;
-
     height: 6rem;
-
     font-family: 'Press Start 2P', cursive;
 }
 
 /* grid right part */
-.sidebar-right-container {
+.form-container {
     display: grid;
     grid-template-rows: 1fr 0.85fr 1fr;
     flex-wrap: wrap;
-    
 }
 
 .txt, .button-container {
@@ -69,21 +63,18 @@ body {
 
 .txt-top  {
     margin: 7rem 5rem 1rem var(--margin-left);
-
 }
 
 .txt-bottom {
     margin: 1rem 5rem 1.5rem var(--margin-left);
-
 }
 
 p, label, button, h1 {
     font-family: 'Roboto', sans-serif;
 }
 
-.input-container {
+.form-inputs {
     display: flex;
-    
 }
 
 .form-left, .form-right {
@@ -109,7 +100,11 @@ label, input {
     margin-bottom: 0.5rem;
 }
 
-input[type=text] {
+input {
+    height: 1.3rem;
+}
+
+inputW {
     box-sizing: border-box;
     border: 1px solid lightgray;
     border-radius: 2px;
@@ -117,7 +112,7 @@ input[type=text] {
     margin-bottom: 1rem;
 }
 
-input[type=text]:focus {
+input:focus {
     outline-color: blue;
     /* !!!!!!!!!!!!!!!!! box shadow richtig hinbekommen
      */
@@ -130,6 +125,10 @@ input[type=text]:focus {
 
 .txt {
     grid-row: 1 / 2;
+}
+
+.input-container {
+    grid-row: 2 / 3;
 }
 
 .button-container {
