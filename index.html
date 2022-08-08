@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <div class="container container-grid">
         <!-- left -->
         <div class="sidebar-left">
@@ -32,6 +33,7 @@
 
         <!-- form -->
         <form class="form-container" action="submit">
+            <!-- top div -->
             <div class="txt">            
                 <p class="txt-top">
                     This is not a real online service! You konw you need something 
@@ -45,7 +47,7 @@
             </div>
 
             
-
+            <!-- middle div -->
             <div class="input-container">
                 <h1>Let's do this!</h1>
 
@@ -61,11 +63,11 @@
     
                     <div class="form-right">
                         <label for="last-name">LAST NAME</label>
-                        <input id="last-name" type="text"/>
+                        <input id="last-name" type="text" required/>
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input id="phone-number" type="type"/>
+                        <input id="phone-number" type="number" required/>
                         <label for="confirm-password">CONFIRM PASSWORD</label>
-                        <input id="confirm-password"type="text"/>
+                        <input id="confirm-password"type="text" required/>
                     </div>
                 </div>
 
@@ -73,7 +75,7 @@
             </div>
 
 
-
+            <!-- bottom div -->
             <div class="button-container">
                 <button type="submit" class="submit-button">
                     CREATE ACCOUNT
