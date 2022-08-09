@@ -148,6 +148,7 @@ button {
     cursor: pointer;
     border-radius: 10px;
     transition-duration: 0.4s;
+    border-color: black;
 }
 
 button:hover, button:focus {
